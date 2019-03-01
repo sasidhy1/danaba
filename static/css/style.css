@@ -1,22 +1,34 @@
 body	{
-	background-color: black;
+	background-color: black !important;
+}
+
+.container-fluid {
+	/*margin: 0px 500px 50px 500px !important;*/
+	margin-bottom: 50px;
+	width: 60%;
+}
+
+.planet-bg	{
 	background-image: url("../imgs/danielle_bg.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	margin: 0px 50px 0px 50px;
 }
 
-p#title	{
+a#title	{
 	text-align: center;
+	display:block;
 	color: white;
-	font-family: "Quicksand", sans-serif;
 	font-size: 24px;
-	font-weight: normal;
 	letter-spacing: 13.5px;
-	line-height: 0.85em;
-}	
+	font-family: "Quicksand", sans-serif;
+	text-shadow: 0 0 10px teal, 0 0 10px gold;
+}
+
+a#title:hover	{
+	text-decoration: none;
+}
 
 hr	{
 	opacity: 0.25;
@@ -29,7 +41,7 @@ nav	{
 	font-family: "Quicksand", sans-serif;
 	font-size: 12px;
 	letter-spacing: 2px;
-	/*line-height: 1.65em;*/
+	line-height: 0em;
 	font-weight: normal;
 }
 
@@ -47,28 +59,26 @@ nav > ul > li .rmarg {
 	margin-right:20px;
 }
 
-nav > ul > li > a 	{
-	text-decoration: none;
-}
-
-a#selected {
+nav > ul > li > a#selected {
 	color: #b39a6b;
 	opacity: 1.0;
 }
 
-a:link {
+nav > ul > li > a:link {
+	color: white;
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+nav > ul > li > a:visited {
 	color: white;
 	opacity: 0.7;
 }
 
-a:visited {
-	color: white;
-	opacity: 0.7;
-}
-
-a:hover {
+nav > ul > li > a:hover {
 	color: white;
 	opacity: 1.0;
+	text-decoration: none;
 }
 
 div#social {
@@ -77,11 +87,35 @@ div#social {
 	bottom: 15px;
 }
 
-div#social	> a {
+div#social > a {
 	margin-right: 5px;
 }
+
+/*div#social > a:hover {
+	opacity: 1.0;
+}*/
 
 i.fa {
 	color: white;
 	opacity: 0.5;
+}
+
+i.fa:hover {
+	opacity: 1.0;
+}
+
+
+.box	{
+
+}
+
+img {
+	border: 2px double gray !important;
+	width: 100%;
+}
+
+label,small {
+	color: gray;
+	font-family: "Quicksand", sans-serif;
+	/*font-size: 12px;*/
 }
