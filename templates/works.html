@@ -9,6 +9,9 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 <link id="sitefonts" href="https://fonts.googleapis.com/css?subset=latin,latin-ext,greek,cyrillic&amp;family=Open+Sans:regular|Quicksand:700%2Cregular" rel="stylesheet" type="text/css">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
 <body>
 
 <div class="container-fluid">
@@ -27,8 +30,21 @@
 	</div>
 	<br>
 	<div class="row">
-		<div class="col-md-12">
-			<img src="../static/imgs/danielle_bg3.jpg">
+		<div class="col-md-12 scroller">
+			<img class="work" src="../static/imgs/danielle_contact.jpg">
+			<img class="work" src="../static/imgs/danielle_about.jpg">
+			<img class="work" src="../static/imgs/danielle_contact.jpg">
+			<img class="work" src="../static/imgs/danielle_about.jpg">
+			<img class="work" src="../static/imgs/danielle_contact.jpg">
+			<img class="work" src="../static/imgs/danielle_about.jpg">
+		</div>
+	</div><br>
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<div class="item"><img class="album" src="../static/imgs/danielle_bg2.jpg"></div>
+			<div class="item"><img class="album" src="../static/imgs/danielle_bg3.jpg"></div>
+			<div class="item"><img class="album" src="../static/imgs/danielle_bg4.jpg"></div>
+			<div class="item"><img class="album" src="../static/imgs/danielle_bg5.jpg"></div>
 		</div>
 	</div>
 </div>
@@ -42,6 +58,13 @@
 </div>
 
 </body>
+<script type="text/javascript">
 
+	$('.scroller').mousewheel(function(e, delta) {
+	    $(this).scrollLeft(this.scrollLeft + (-delta * 40));
+	    e.preventDefault();
+	});
+
+</script>
 
 </html>

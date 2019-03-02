@@ -91,10 +91,6 @@ div#social > a {
 	margin-right: 5px;
 }
 
-/*div#social > a:hover {
-	opacity: 1.0;
-}*/
-
 i.fa {
 	color: white;
 	opacity: 0.5;
@@ -104,18 +100,81 @@ i.fa:hover {
 	opacity: 1.0;
 }
 
-
-.box	{
-
+img {
+	/*border: 2px double gray !important;*/
+	width: 100%;
 }
 
-img {
-	border: 2px double gray !important;
-	width: 100%;
+.scroller {
+	overflow-x: auto;
+	overflow-y: hidden;
+    white-space: nowrap;
+	width:100%;
+	/*height:500px;*/
+}
+
+.scroller > img {
+	max-width:250px;
+	/*max-height: 200px;*/
+	/*object-fit: contain;*/
+	/*object-position: center; */
 }
 
 label,small {
 	color: gray;
 	font-family: "Quicksand", sans-serif;
 	/*font-size: 12px;*/
+}
+
+.item {
+  position: relative;
+  border: 1px solid #333;
+  margin: 2%;
+  overflow: hidden;
+  /*width: 100px;*/
+  float:left;
+}
+
+.album	{
+	object-fit: cover;
+	width:200px;
+	height:150px;
+	  /*max-height:200px;*/
+	  /*object-fit: contain;*/
+  /*overflow:hidden;*/
+}
+
+.album {
+  max-width: 100%;
+  
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.album:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.work	{
+	object-fit: cover;
+	/*width:200px;*/
+	/*height:150px;*/
+	  /*max-height:200px;*/
+	  /*object-fit: contain;*/
+  /*overflow:hidden;*/
+}
+
+.work {
+  max-width: 100%;
+  
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.work:hover {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
