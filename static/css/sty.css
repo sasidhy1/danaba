@@ -1,0 +1,138 @@
+body	{
+	background-color: black !important;
+}
+
+.one    {
+    background: url("../imgs/danielle_bg.jpg");
+}
+
+.two    {
+    background: url("../imgs/danielle_bg2.jpg");
+}
+
+.three    {
+    background: url("../imgs/danielle_bg3.jpg");
+}
+
+.four    {
+    background: url("../imgs/danielle_bg4.jpg");
+}
+
+.five    {
+    background: url("../imgs/danielle_bg5.jpg");
+}
+
+.six    {
+    background: url("../imgs/danielle_bg6.jpg");
+}
+
+.carousel-item    {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;  
+}
+
+.header	{
+	position:absolute;
+	top: 40px;
+}
+
+.header2	{
+	margin-top: 40px;
+	width:60%;
+}
+
+a > span#spacer {
+	letter-spacing: 13.5px;
+}
+
+a#title	{
+	color: white;
+	font-size: 24px;
+	font-family: "Quicksand", sans-serif;
+	text-shadow: 0 0 10px teal, 0 0 10px gold;
+}
+
+a#title:hover	{
+	text-decoration: none;
+}
+
+hr	{
+	opacity: 0.25;
+	background-color: white;
+}
+
+.hr2 {
+	width: 60%;  
+}
+
+nav	{
+	text-align: center;
+	color: white;
+	font-family: "Quicksand", sans-serif;
+	font-size: 12px;
+	letter-spacing: 2px;
+	line-height: 0em;
+	font-weight: normal;
+}
+
+nav > ul 	{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+
+nav > ul > li {
+	display: inline;
+}
+
+nav > ul > li .rmarg {
+	margin-right:20px;
+}
+
+nav > ul > li > a#selected {
+	color: #b39a6b;
+	opacity: 1.0;
+}
+
+nav > ul > li > a:link {
+	color: white;
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+nav > ul > li > a:visited {
+	color: white;
+	opacity: 0.7;
+}
+
+nav > ul > li > a:hover {
+	color: white;
+	opacity: 1.0;
+	text-decoration: none;
+}
+
+div#social {
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+}
+
+div#social > a {
+	margin-right: 5px;
+}
+
+i.fa {
+	color: white;
+	opacity: 0.5;
+}
+
+i.fa:hover {
+	opacity: 1.0;
+}
+
+.side-img {
+	width: 100%;
+	padding: 50px;
+}

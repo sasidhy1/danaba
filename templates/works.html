@@ -37,9 +37,35 @@
 			<img class="work" src="../static/imgs/danielle_about.jpg">
 			<img class="work" src="../static/imgs/danielle_contact.jpg">
 			<img class="work" src="../static/imgs/danielle_about.jpg">
+			<img class="work" src="../static/imgs/danielle_contact.jpg">
+			<img class="work" src="../static/imgs/danielle_about.jpg">
+			<img class="work" src="../static/imgs/danielle_contact.jpg">
+			<img class="work" src="../static/imgs/danielle_about.jpg">
+			<img class="work" src="../static/imgs/danielle_contact.jpg">
+			<img class="work" src="../static/imgs/danielle_about.jpg">
+			<img class="work" src="../static/imgs/danielle_contact.jpg">
+			<img class="work" src="../static/imgs/danielle_about.jpg">
+			<img class="work" src="../static/imgs/danielle_contact.jpg">
+			<img class="work" src="../static/imgs/danielle_about.jpg">
+			<img class="work" src="../static/imgs/danielle_contact.jpg">
+			<img class="work" src="../static/imgs/danielle_about.jpg">
 		</div>
-	</div><br>
+	</div><br><br>
+
 	<div class="row">
+		<div class="col-md-1 offset-md-1"></div>
+		<div class="col-md-10">
+			<div class="col-md-12">
+				<div class="col-md-3"><div class="item"><img class="album" src="../static/imgs/danielle_bg2.jpg"></div><figcaption>360 (2018)</figcaption></div>
+				<div class="col-md-3"><div class="item"><img class="album" src="../static/imgs/danielle_bg6.jpg"></div><figcaption>FOREST FOR THE TREES (2019)</figcaption></div>
+				<div class="col-md-3"><div class="item"><img class="album" src="../static/imgs/danielle_bg4.jpg"></div><figcaption>MICROCOSMIC (2017)</figcaption></div>
+				<div class="col-md-3"><div class="item"><img class="album" src="../static/imgs/danielle_bg5.jpg"></div><figcaption>LANDSCAPES (2016)</figcaption></div>
+			</div>
+		</div>
+	</div>
+
+<!-- 			<div class="item"><figure class="figure"><img class="album figure-img img-fluid rounded" src="../static/imgs/danielle_bg2.jpg"><figcaption class="figure-caption">A caption for the above image.</figcaption></figure></div> -->
+<!-- 	<div class="row">
 		<div class="col-md-12 text-center">
 			<div class="item"><img class="album" src="../static/imgs/danielle_bg2.jpg"></div>
 			<div class="item"><img class="album" src="../static/imgs/danielle_bg3.jpg"></div>
@@ -47,6 +73,15 @@
 			<div class="item"><img class="album" src="../static/imgs/danielle_bg5.jpg"></div>
 		</div>
 	</div>
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<span class="caps">dfsdf</span>
+			<span class="caps">dfsdf</span>
+			<span class="caps">dfsdf</span>
+			<span class="caps">dfsdf</span>
+		</div>
+	</div> -->
+
 </div>
 
 <div id="social">
@@ -60,10 +95,55 @@
 </body>
 <script type="text/javascript">
 
-	$('.scroller').mousewheel(function(e, delta) {
-	    $(this).scrollLeft(this.scrollLeft + (-delta * 40));
-	    e.preventDefault();
+	$('.scroller').mousewheel(function(event, delta) {
+	    $(this).scrollLeft(this.scrollLeft + (-delta * 100));
+	    event.preventDefault();
 	});
+
+// if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
+// window.onmousewheel = document.onmousewheel = wheel;
+
+// function wheel(event) {
+//     var delta = 0;
+//     if (event.wheelDelta) delta = event.wheelDelta / 120;
+//     else if (event.detail) delta = -event.detail / 3;
+
+//     handle(delta);
+//     if (event.preventDefault) event.preventDefault();
+//     event.returnValue = false;
+// }
+
+// var goUp = true;
+// var end = null;
+// var interval = null;
+
+// function handle(delta) {
+// 	var animationInterval = 20; //lower is faster
+//   var scrollSpeed = 20; //lower is faster
+
+// 	if (end == null) {
+//   	end = $(window).scrollTop();
+//   }
+//   end -= 20 * delta;
+//   goUp = delta > 0;
+
+//   if (interval == null) {
+//     interval = setInterval(function () {
+//       var scrollTop = $(window).scrollLeft();
+//       var step = Math.round((end - scrollTop) / scrollSpeed);
+//       if (scrollTop <= 0 || 
+//           scrollTop >= $(window).prop("scrollHeight") - $(window).height() ||
+//           goUp && step > -1 || 
+//           !goUp && step < 1 ) {
+//         clearInterval(interval);
+//         interval = null;
+//         end = null;
+//       }
+//       $(window).scrollLeft(scrollTop + step );
+//     }, animationInterval);
+//   }
+// }
+
 
 </script>
 
